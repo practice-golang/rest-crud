@@ -1,0 +1,34 @@
+### Not work
+GET http://localhost:1323
+
+### Index
+GET http://localhost:1323/books
+
+### Create
+POST http://localhost:1323/books
+Content-Type: application/x-www-form-urlencoded
+
+title=책 이름
+&author=pukupuku bbang bbang
+
+### Read
+GET http://localhost:1323/books/1
+
+### Update
+PUT http://localhost:1323/books
+content-type: application/json
+
+{
+    "id": "9999",
+    "title": "put Title",
+    "author": "put Author"
+}
+
+### Delete
+DELETE http://localhost:1323/books/1
+content-type: application/json
+
+{
+    "user": "ㅋㄷ",
+    "token": "버스토큰 택시토큰 지하철토큰 뱅기 토큰"
+}
